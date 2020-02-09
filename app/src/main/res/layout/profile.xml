@@ -15,6 +15,7 @@
 
         <ImageView
             android:layout_width="24dp"
+            android:id="@+id/profile_back_img_view"
             android:layout_height="24dp"
             android:layout_gravity="center"
             android:src="@drawable/backward_arrow1" />
@@ -37,6 +38,7 @@
             android:layout_weight="1"/>
         <ImageView
             android:layout_width="24dp"
+            android:id="@+id/profile_options"
             android:layout_height="24dp"
             android:layout_gravity="center"
             android:src="@drawable/group_108" />
@@ -69,6 +71,7 @@
         android:layout_gravity="center"
         android:text="Profile name"
         android:textStyle="bold"
+        android:id="@+id/profile_name_text_view"
 
         android:textSize="18sp"
 
@@ -77,6 +80,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/profile_status_text_view"
         android:layout_gravity="center"
         android:text="Status"
 
@@ -95,6 +99,7 @@
 
           <TextView
           android:layout_width="wrap_content"
+              android:id="@+id/follower_number_text_view"
           android:text="12k"
           android:textColor="@color/green"
               android:layout_gravity="center"
@@ -123,6 +128,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:text="6k"
+                android:id="@+id/following_number_text_view"
+
                 android:textColor="@color/green"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"/>
@@ -150,6 +157,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:text="2k"
+                android:id="@+id/favourite_number_text_view"
+
                 android:textColor="@color/green"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"/>
@@ -169,31 +178,31 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="New Firend"
-            android:textStyle="bold"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_height="wrap_content"/>
+            android:text="New Friend"
+            android:textStyle="bold" />
+
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="5"
-            android:textStyle="bold"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:text="5"
+            android:id="@+id/new_friend_number_text_view"
             android:textColor="@color/green"
-            android:layout_height="wrap_content"/>
-
-
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -206,7 +215,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Signout"
+            android:text="Sign out"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_height="wrap_content"/>
@@ -217,9 +226,10 @@
 
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/icon_awesome-sign-in-alt"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/sign_out_image_view"
+            android:src="@drawable/icon_awesome_sign_in_alt"
             />
 
 
