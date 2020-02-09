@@ -2,7 +2,7 @@
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="wrap_content"
     android:background="#20bf68"
 
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
@@ -44,8 +44,8 @@
 
     <ImageView
         android:id="@+id/app_icon"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -59,11 +59,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="93dp"
+        android:layout_marginStart="53dp"
         android:layout_marginTop="7dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="1dp"
         android:layout_toEndOf="@+id/app_icon"
-        android:searchIcon="@drawable/search_green"
+        android:searchIcon="@drawable/search"
         />
 </androidx.appcompat.widget.Toolbar>
