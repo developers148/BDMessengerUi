@@ -7,28 +7,4 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:src="@drawable/calendar" />
-
-
-<!--        <de.hdodenhof.circleimageview.CircleImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignEnd="@+id/profile_image"-->
-<!--            android:layout_alignParentBottom="true"-->
-<!--            android:layout_marginEnd="-42dp"-->
-<!--            android:layout_marginBottom="6dp"-->
-<!--            android:background="@color/white"-->
-<!--            android:src="@drawable/compose" />-->
-
-    </RelativeLayout>
-
-
 </LinearLayout>
