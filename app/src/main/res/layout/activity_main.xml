@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <?xml version="1.0" encoding="utf-8"?>
-
-
+    
 
 
 </RelativeLayout>
