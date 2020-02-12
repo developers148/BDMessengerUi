@@ -44,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:paddingLeft="13dp"
         android:orientation="horizontal">
 
         <RelativeLayout
@@ -115,7 +116,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:paddingLeft="13dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -141,7 +143,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="13dp">
 
             <TextView
                 android:layout_width="match_parent"
