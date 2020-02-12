@@ -67,6 +67,10 @@
 
     </LinearLayout>
 
+
+
+<!--    please implement new_groups_and_chat_custom_list_view-->
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
