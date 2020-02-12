@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="23sp"
+        android:id="@+id/receiver_circular_image"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ellipse_15"
+        android:layout_height="23dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:padding="6dp"
+        android:id="@+id/receiver_message"
+        android:textColor="@color/white"
+        android:text="Receiver"
+        android:background="@drawable/chat_text_view_background"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
