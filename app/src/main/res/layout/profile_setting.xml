@@ -45,9 +45,11 @@
     </RelativeLayout>
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
         <EditText
             android:id="@+id/first_name_et"
@@ -67,59 +69,71 @@
             android:background="@drawable/profile_setting_edit_text_background"
             android:hint="Last Name"
             android:padding="15dp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
 
-        <TextView
-            android:id="@+id/gender_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/last_name_et"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/profile_setting_edit_text_background"
-            android:hint="Gender"
-            android:padding="15dp" />
+    <TextView
+        android:id="@+id/gender_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-        <Spinner
-            android:id="@+id/gender_spinner"
-            android:layout_width="42dp"
-            android:layout_height="36dp"
-            android:layout_alignStart="@+id/gender_tv"
-            android:layout_alignTop="@+id/gender_tv"
-            android:layout_alignEnd="@+id/gender_tv"
-            android:layout_alignBottom="@+id/gender_tv"
-            android:layout_marginStart="317dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="23dp"
-            android:layout_marginBottom="7dp"
-            android:background="@drawable/ic_arrow_drop_down" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/profile_setting_edit_text_background"
+        android:hint="Gender"
+        android:padding="15dp" />
 
-        <TextView
-            android:id="@+id/date_of_birth_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/gender_tv"
-            android:layout_margin="15dp"
-            android:background="@drawable/profile_setting_edit_text_background"
-            android:hint="Date Of Birth:"
-            android:padding="15dp" />
+    <Spinner
+        android:id="@+id/gender_spinner"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_alignStart="@+id/gender_tv"
+        android:layout_alignTop="@+id/gender_tv"
+        android:layout_alignEnd="@+id/gender_tv"
+        android:layout_alignBottom="@+id/gender_tv"
+        android:layout_marginStart="317dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/ic_arrow_drop_down" />
+</RelativeLayout>
 
-        <TextView
-            android:id="@+id/date_picker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/date_of_birth_tv"
-            android:layout_alignTop="@+id/date_of_birth_tv"
-            android:layout_alignEnd="@+id/date_of_birth_tv"
-            android:layout_alignBottom="@+id/date_of_birth_tv"
-            android:layout_marginStart="274dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="14dp"
-            android:text="DD | MM | YY" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/date_of_birth_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="15dp"
+        android:background="@drawable/profile_setting_edit_text_background"
+        android:hint="Date Of Birth:"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/date_picker"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/date_of_birth_tv"
+        android:layout_alignTop="@+id/date_of_birth_tv"
+        android:layout_alignEnd="@+id/date_of_birth_tv"
+        android:layout_alignBottom="@+id/date_of_birth_tv"
+        android:layout_marginStart="231dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="DD | MM | YY" />
+</RelativeLayout>
+
 
         <Button
             android:id="@+id/save_button"
@@ -134,6 +148,6 @@
             android:padding="15dp" />
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>
