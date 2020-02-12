@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/backward_arrow1"/>
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call Info"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="18sp"/>
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/call_message"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/green_message"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search_green"/>
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/menu_click"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/three_dot"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/friend_profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ellipse_15" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/friend_profile_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Profile name"
+                android:textAllCaps="false"
+
+                android:textSize="18sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/friend_profile_status_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Status"
+                android:textAllCaps="false" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+          android:layout_marginStart="120dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/green_call"/>
+
+        <ImageView
+
+            android:id="@+id/video"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/green_video"/>
+
+
+    </LinearLayout>
+
+<!--    please implement the call_list_customView-->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/call_list"
+
+        />
+
+</LinearLayout>
